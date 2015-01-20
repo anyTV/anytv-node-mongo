@@ -1,10 +1,15 @@
 var mongo     = require('mongoskin'),
-    db_config = require(__dirname + '/../config/config').DB_MONGO;
+    db_config;
 
-module.exports = mongo.db('mongodb://'
-        + db_config.host
-        + ':'
-        + db_config.port
-        + '/'
-        + db_config.name,
-    {native_parser : true});
+module.exports = function(_db_config) {
+    db_config = _db_config;
+    
+    return mongo.db('mongodb://'
+            + db_config.host
+            + ':'
+            + db_config.port
+            + '/'
+            + db_config.name,
+        {native_parser : true}
+    );
+};
