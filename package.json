@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/anyTV/anytv-node-mongo/issues"
   },
-  "homepage": "https://github.com/anyTV/anytv-node-mongo"
+  "homepage": "https://github.com/anyTV/anytv-node-mongo",
+  "dependencies": {
+    "mongodb": "^1.4.28",
+    "mongoskin": "^1.4.11"
+  }
 }
