@@ -1,6 +1,6 @@
 {
   "name": "anytv-node-mongo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "anytv mongo helper",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/anyTV/anytv-node-mongo",
   "dependencies": {
-    "mongodb": "^1.4.28",
-    "mongoskin": "^1.4.11"
+    "mongoskin": "latest"
   }
 }

@@ -1,19 +1,31 @@
+'use strict';
+
 var mongo = require('mongoskin'),
+    connections = {};
 
-    cached_config,
+module.exports = function (config) {
+    var connection,
+        key = '',
+        i;
 
-    mongo_wrapper = function(config) {
-        cached_config = config || cached_config;
+    for (i in config) {
+        key += config[i];
+    }
 
-        return mongo.db('mongodb://'
-                + cached_config.host
-                + ':'
-                + cached_config.port
-                + '/'
-                + cached_config.name,
-            {native_parser : true}
-        );
-    };
+    if (connections[key]) {
+        return connections[key];
+    }
 
+    connection = mongo.db('mongodb://'
+        + config.user + ':'
+        + config.password + '@'
+        + (config.host || '127.0.0.1') + ':'
+        + (config.port || 27107) + '/'
+        + config.database,
+        {native_parser : true}
+    );
 
-module.exports = mongo_wrapper;
+    connections[key] = connection;
+
+    return connection;
+};
