@@ -1,6 +1,6 @@
 {
   "name": "anytv-node-mongo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "anytv mongo helper",
   "main": "index.js",
   "scripts": {
