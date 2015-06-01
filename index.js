@@ -1,6 +1,6 @@
 'use strict';
 
-var mongo = require('mongoskin'),
+var mongo = require('mongoskin');
 
 module.exports = {
     connections : {},
