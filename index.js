@@ -20,11 +20,12 @@ module.exports = {
         }
 
         credentials = (config.user || '')
-            + ((config.user && config.password) ?
-                    (':' + config.password) : '');
+            + ((config.user && config.password)
+                    ? (':' + config.password)
+                    : '');
 
         connection = mongo.db('mongodb://'
-            + ((credentials) ? (credentials + '@') : '')
+            + (credentials ? (credentials + '@') : '')
             + (config.host || '127.0.0.1') + ':'
             + (config.port || 27017) + '/'
             + config.database,
