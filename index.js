@@ -7,6 +7,7 @@ module.exports = {
 
     open : function (config) {
         var connection,
+            credentials = '',
             key = '',
             i;
 
@@ -18,11 +19,14 @@ module.exports = {
             return this.connections[key];
         }
 
+        credentials = (config.user || '')
+            + ((config.user && config.password) ?
+                    (':' + config.password) : '');
+
         connection = mongo.db('mongodb://'
-            + config.user + ':'
-            + config.password + '@'
+            + ((credentials) ? (credentials + '@') : '')
             + (config.host || '127.0.0.1') + ':'
-            + (config.port || 27107) + '/'
+            + (config.port || 27017) + '/'
             + config.database,
             {native_parser : true}
         );
