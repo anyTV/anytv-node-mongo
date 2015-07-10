@@ -7,8 +7,8 @@ module.exports = {
 
     open : function (config) {
         var connection,
-            credentials = '',
-            key = '',
+            credentials,
+            key,
             i;
 
         for (i in config) {
