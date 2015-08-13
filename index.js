@@ -35,5 +35,7 @@ module.exports = {
         this.connections[key] = connection;
 
         return connection;
-    }
+    },
+
+    helper: mongo.helper
 };
