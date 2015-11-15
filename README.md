@@ -1,7 +1,7 @@
 # anytv-node-mongo
 
 [![Build Status](https://travis-ci.org/anyTV/anytv-node-mongo.svg?branch=master)](https://travis-ci.org/anyTV/anytv-node-mongo)
-[![Coverage Status](https://coveralls.io/repos/anyTV/anytv-node-mongo/badge.svg?branch=master&service=github)](https://coveralls.io/github/anyTV/anytv-node-mongo?branch=master)
+[![Coverage Status](https://coveralls.io/repos/anyTV/anytv-node-mongo/badge.svg?branch=master&service=github&t)](https://coveralls.io/github/anyTV/anytv-node-mongo?branch=master)
 [![Documentation](https://doc.esdoc.org/github.com/anyTV/anytv-node-mongo/badge.svg?branch=master&service=github)](https://doc.esdoc.org/github.com/anyTV/anytv-node-mongo?branch=master)
 [![Dependencies](https://david-dm.org/anyTV/anytv-node-mongo.svg)](https://david-dm.org/anyTV/anytv-node-mongo)
 
