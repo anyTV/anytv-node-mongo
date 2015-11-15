@@ -1,4 +1,5 @@
 install:
+  - "npm install"
   - "export TRAVIS=1"
 services:
   - mongodb
