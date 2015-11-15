@@ -43,7 +43,7 @@ mongo.open(config)
 
 # Documentation
 
-Code documentation can be found at (https://doc.esdoc.org/github.com/anyTV/anytv-node-mongo/)[https://doc.esdoc.org/github.com/anyTV/anytv-node-mongo/].
+Code documentation can be found [here](https://doc.esdoc.org/github.com/anyTV/anytv-node-mongo/).
 
 
 # Contributing
