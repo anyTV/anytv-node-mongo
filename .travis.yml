@@ -1,3 +1,5 @@
+install:
+  - "export TRAVIS=1"
 services:
   - mongodb
 before_script:
